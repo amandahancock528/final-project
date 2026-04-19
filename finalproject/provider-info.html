@@ -1,0 +1,82 @@
+<!--Amanda Hancock 04/19/26 Final Project (Dental Office Template Site)-->
+
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Office Template Provider Info</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/pages.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body class="provider-page">
+    <header>
+        <a href="index.html">
+            <img src="images/logo.png" alt="Dental Office Template Logo">
+        </a>
+        <h1>Dental Office Name</h1>
+        <h3>Insert your office slogan here!</h3>
+    </header>
+
+    <nav class="menu">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-button">&#9776;</label>
+        <ul class="level1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="patient-info.html">Patient Info</a></li>
+            <li class="current"><a href="provider-info.html">Provider Info</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section class="primary">
+            <h2>Provider Information</h2>
+
+            <form action="mailto:office@dentalofficetemplate.com" method="post" enctype="text/plain" class="contact-form">
+                <div>
+                    <label for="provider-email">Your Office Email:</label>
+                    <input type="email" id="provider-email" name="provider-email" required>
+                </div>
+
+                <div>
+                    <label for="provider-subject">Subject:</label>
+                    <input type="text" id="provider-subject" name="provider-subject" required>
+                </div>
+
+                <div>
+                    <label for="provider-comment">Comment:</label>
+                    <textarea id="provider-comment" name="provider-comment" rows="5" required></textarea>
+                </div>
+
+                <div>
+                    <label for="patient-diagnosis">Patient Diagnosis</label>
+                    <input type="text" id="patient-diagnosis" name="patient-diagnosis">
+                </div>
+
+                <div>
+                    <label for="patient-insurance"></label>
+                    <input type="text" id="patient-insurance" name="patient-insurance" required>
+                </div>
+
+                <div>
+                    <input type="submit" value="Submit Referral">
+                </div>
+            </form>
+
+            <h3>Printable Referral Form</h3>
+            <img src="images/referral-form.png" alt="Referral Printable" class="feature-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Amanda Hancock 2026</p>
+    </footer>
+
+    </body>
+    </html>
